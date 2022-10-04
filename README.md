@@ -57,3 +57,7 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```sh
 npm run lint
 ```
+
+
+Useful:
+https://www.section.io/engineering-education/how-to-interact-with-an-api-from-a-vuejs-application/

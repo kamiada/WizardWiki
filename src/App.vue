@@ -17,6 +17,29 @@ import { RouterLink, RouterView } from "vue-router";
   <RouterView />
 </template>
 
+<script>
+
+export default {
+  data() {
+    return {
+      posts: [],
+    };
+  },
+  methods: {
+    async getData() {
+      try {
+        const response = await this.$http.get(
+          "http://jsonplaceholder.typicode.com/posts"
+        );
+        this.posts = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  }
+</script>
+
+
 <style scoped>
 header {
   line-height: 1.5;
