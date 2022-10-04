@@ -18,7 +18,6 @@ import { RouterLink, RouterView } from "vue-router";
 </template>
 
 <script>
-
 export default {
   data() {
     return {
@@ -36,7 +35,8 @@ export default {
         console.log(error);
       }
     },
-  }
+  },
+};
 </script>
 
 
